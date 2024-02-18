@@ -59,7 +59,7 @@ pip install -r requirements.txt
 crontab -e 
 
 0 3 * * * /root/HinetChangeIPShare/HinetChangeIP.sh >/dev/null 2>&1 # 每天3点换IP
-*/30 * * * * /root/HinetChangeIP/HinetCheckNF.sh >/dev/null 2>&1    # 奈非检测和GFW检测
+*/30 * * * * /root/HinetChangeIPShare/HinetCheckNF.sh >/dev/null 2>&1    # 奈非检测和GFW检测
 ```
 
 
