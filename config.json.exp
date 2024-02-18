@@ -1,0 +1,12 @@
+{
+  "name": "Hinet-TW",
+  "email": "xxxx@gmail.com",
+  "api_key": "xxxxxxxx",
+  "domain": "example.xyz",
+  "changeHinetIpUrl": "xxxxxxxxxxx",
+  "TGBotAPI": "xxxxxxxxxxxxxxx",
+  "chartId": "xxxxxxxxxxxx",
+  "ddnsUrl": "xxxxxxxxxxxxxx",
+  "sock5Port": "xxxxxxxxxxxxxxxx",
+  "checkGFWUrl": "xxxxxxxxxxxxxxxxxxxxx"
+}

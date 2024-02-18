@@ -1,0 +1,3 @@
+requests
+cloudflare-ddns
+loguru
