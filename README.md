@@ -64,4 +64,8 @@ crontab -e
 
 
 
+![image-20240218222513485](https://oss.660114.xyz/blog-images/202402182225549.png)
 
+![image-20240218222606312](https://oss.660114.xyz/blog-images/202402182226340.png)
+
+![image-20240218222634780](https://oss.660114.xyz/blog-images/202402182226806.png)
