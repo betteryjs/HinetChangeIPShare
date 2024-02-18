@@ -8,7 +8,7 @@ sudo docker run -d -p 5000:5000  --restart unless-stopped --name checkip bettery
 ## 在 https://t.me/BotFather 创建通知机器人 
 ## 通过 https://t.me/getmyid_bot 获取私聊chat_id 或者 通过 https://t.me/get_id_bot 获取群组chat_id
 
-
+## 提前将 Hinet的ip 解析到要设置ddns的域名上
 ## 克隆项目
 
 ```shell
