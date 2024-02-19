@@ -5,6 +5,7 @@ import requests
 from cloudflare_ddns import CloudFlare
 from loguru import logger
 
+logger.remove(handler_id=None)  # 清除之前的设置
 logger.add("HinetChangeIP.log",rotation="10MB", encoding="utf-8", enqueue=True, retention="5 days")
 
 class HinetNFTest(object):
@@ -66,23 +67,53 @@ class HinetNFTest(object):
         ipv6res = res[res.find("[IPv6]"):]
         logger.debug(ipv4res)
         if "您的出口IP完整解锁Netflix"  in ipv4res:
-            logger.debug("[{}]-[奈非检测]-[您的出口IP完整解锁Netflix]".format(self.name))
+            msg="[{}]-[奈非检测]-[您的出口IP完整解锁Netflix]".format(self.name)
+            logger.debug(msg)
         else:
-
-            self.sendTelegram("[{}]-[奈非检测]-[奈非检测失败]".format(self.name))
-            logger.debug("[{}]-[奈非检测]-[奈非检测失败]".format(self.name))
+            msg="[{}]-[奈非检测]-[奈非检测失败]".format(self.name)
+            self.sendTelegram(msg)
+            logger.debug(msg)
             self.change_ip()
+    def check_nf_tgbot(self):
+        cmds="./nf -proxy socks5://"+self.get_ip()+":"+self.sock5Port
+        p = subprocess.Popen(cmds, shell=True, stdout=subprocess.PIPE)
+        out, err = p.communicate()
+        res=out.decode()
+        ipv4res = res[0:res.find("[IPv6]")]
+        ipv6res = res[res.find("[IPv6]"):]
+        logger.debug(ipv4res)
+        if "您的出口IP完整解锁Netflix"  in ipv4res:
+            msg="[{}]-[奈非检测]-[您的出口IP完整解锁Netflix]".format(self.name)
+            logger.debug(msg)
+            return msg
+        else:
+            msg="[{}]-[奈非检测]-[奈非检测失败]".format(self.name)
+            logger.debug(msg)
+            return msg
 
 
     def check_gfw_block(self):
         gfwUrl = self.checkGFWUrl + self.get_ip()
         resp = requests.get(url=gfwUrl).json()
         if resp["isblock"]==True:
-            self.sendTelegram("[{}]-[GFW检测]-[IP ban 啦]".format(self.name))
-            logger.debug("[{}]-[GFW检测]-[IP ban 啦]".format(self.name))
+            msg="[{}]-[GFW检测]-[IP ban 啦]".format(self.name)
+            self.sendTelegram(msg)
+            logger.debug(msg)
             self.change_ip()
         else:
             logger.debug("[{}]-[GFW检测]-[IP正常]".format(self.name))
+
+    def check_gfw_block_tg(self):
+        gfwUrl = self.checkGFWUrl + self.get_ip()
+        resp = requests.get(url=gfwUrl).json()
+        if resp["isblock"]==True:
+            msg="[{}]-[GFW检测]-[IP ban 啦]".format(self.name)
+            logger.debug(msg)
+            return msg
+        else:
+            msg="[{}]-[GFW检测]-[IP正常]".format(self.name)
+            logger.debug(msg)
+            return msg
 
 
 

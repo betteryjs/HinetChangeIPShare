@@ -8,5 +8,7 @@
   "chartId": "xxxxxxxxxxxx",
   "ddnsUrl": "xxxxxxxxxxxxxx",
   "sock5Port": "xxxxxxxxxxxxxxxx",
-  "checkGFWUrl": "xxxxxxxxxxxxxxxxxxxxx"
+  "checkGFWUrl": "xxxxxxxxxxxxxxxxxxxxx",
+  "changeIPCrons": "0 3 * * *",
+  "checkNfGfwCron": "*/10 * * * *"
 }

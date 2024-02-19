@@ -1,0 +1,10 @@
+[Unit]
+Description=Test Service
+After=multi-user.target
+
+[Service]
+Type=idle
+WorkingDirectory=/root/HinetChangeIPShare/
+ExecStart=/root/HinetChangeIPShare/.venv/bin/python3 /root/HinetChangeIPShare/HinetTGBot.py
+[Install]
+WantedBy=multi-user.target

@@ -30,8 +30,9 @@ cd HinetChangeIPShare
   "chartId": "xxxxxx", # 填入上面获取的私聊chat_id或者群组chat_id
   "ddnsUrl": "hinet.example.xyz", # 填入要ddns的域名 先要吧Hinet的ip解析到要ddns的域名上
   "sock5Port": "10241",           # 在机器上创建一个没有密码的sock5 节点 (xui/3xui) 设置端口后 后续通过这个sock5代理检测奈非解锁
-  "checkGFWUrl": "http://填入在国内端部署的GFW检测程序的IP:5000/checkip/"
-  # 例如 http://1.1.1.1:5000/checkip/
+  "checkGFWUrl": "http://填入在国内端部署的GFW检测程序的IP:5000/checkip/", # 例如 http://1.1.1.1:5000/checkip/
+  "changeIPCrons": "0 3 * * *", #每日换IP的crontab 时间 默认每天凌晨3点
+  "checkNfGfwCron": "*/10 * * * *" # 奈非/被墙检测默认10分钟1次
 ```
 
 
@@ -54,13 +55,17 @@ pip install -r requirements.txt
 ```
 
 
-## 添加 crontab
+## 复制 service
 ```
-crontab -e 
+cp  HinetTGBot.service  /lib/systemd/system/
+chmod 644 /lib/systemd/system/HinetTGBot.service
+systemctl start HinetTGBot.service
+systemctl enable HinetTGBot.service
+systemctl status HinetTGBot.service
 
-0 3 * * * /root/HinetChangeIPShare/HinetChangeIP.sh >/dev/null 2>&1 # 每天3点换IP
-*/30 * * * * /root/HinetChangeIPShare/HinetCheckNF.sh >/dev/null 2>&1    # 奈非检测和GFW检测
 ```
+
+
 
 
 
@@ -69,3 +74,5 @@ crontab -e
 ![image-20240218222606312](https://oss.660114.xyz/blog-images/202402182226340.png)
 
 ![image-20240218222634780](https://oss.660114.xyz/blog-images/202402182226806.png)
+
+![image-20240219123215338](https://oss.660114.xyz/blog-images/202402191232491.png)

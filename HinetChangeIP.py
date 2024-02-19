@@ -5,7 +5,7 @@ import json
 
 
 
-
+logger.remove(handler_id=None)  # 清除之前的设置
 logger.add("HinetChangeIP.log",rotation="10MB", encoding="utf-8", enqueue=True, retention="5 days")
 
 
@@ -28,6 +28,8 @@ class Hinet(object):
         self.ddnsUrl=configJson["ddnsUrl"]
         self.name=configJson["name"]
         self.cf = CloudFlare(self.email, self.api_key, self.domain)
+        self.changeIPCrons=configJson["changeIPCrons"]
+        self.checkNfGfwCron=configJson["checkNfGfwCron"]
 
 
     def change_ip(self):
@@ -37,12 +39,35 @@ class Hinet(object):
             if response.status_code == 200 and len(response.text.split(".")) == 4:
                 res_ip = response.text.strip()
                 self.cf_ddns(res_ip)
-                self.sendTelegram("[{}]-[IP更换成功]-[当前IP {}]".format(self.name,res_ip))
+                msg="[{}]-[IP更换成功]-[当前IP {}]".format(self.name,res_ip)
+                self.sendTelegram(msg)
+                logger.debug(msg)
 
 
         except Exception as err:
             logger.error(err)
-            self.sendTelegram("[{}]-[IP更换失败]-[当前IP {}]".format(self.name,self.get_ip()))
+            msg="[{}]-[IP更换失败]-[当前IP {}]".format(self.name,self.get_ip())
+            self.sendTelegram(msg)
+            logger.error(msg)
+            return msg
+
+    def change_ip_tg(self):
+        try:
+            response = requests.get(url=self.changeHinetIpUrl)
+            logger.debug(response.text)
+            if response.status_code == 200 and len(response.text.split(".")) == 4:
+                res_ip = response.text.strip()
+                self.cf_ddns(res_ip)
+                msg="[{}]-[IP更换成功]-[当前IP {}]".format(self.name,res_ip)
+                logger.debug(msg)
+                return msg
+
+
+        except Exception as err:
+            logger.error(err)
+            msg="[{}]-[IP更换失败]-[当前IP {}]".format(self.name,self.get_ip())
+            logger.error(msg)
+            return msg
 
     def get_ip(self):
         try:
