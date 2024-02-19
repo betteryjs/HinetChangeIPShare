@@ -73,6 +73,4 @@ systemctl status HinetTGBot.service
 
 ![image-20240218222606312](https://oss.660114.xyz/blog-images/202402182226340.png)
 
-![image-20240218222634780](https://oss.660114.xyz/blog-images/202402182226806.png)
-
 ![image-20240219123215338](https://oss.660114.xyz/blog-images/202402191232491.png)
