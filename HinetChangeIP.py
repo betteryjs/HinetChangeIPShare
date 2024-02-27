@@ -71,6 +71,7 @@ class Hinet(object):
 
     def get_ip(self):
         try:
+            self.cf.refresh()
             res = self.cf.get_record('A', self.ddnsUrl)
             return res["content"]
 
