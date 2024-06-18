@@ -142,7 +142,7 @@ def refresh(call):
     elif call.data == "9":
 
         logger.info("chick 奈非自动换IP状态")
-        if hinet.is_timer_running("changeip"):
+        if hinet.is_timer_running("checkNf"):
             msg = "奈非自动换IP已开启 crontab is {}".format(hinet.checkNfGfwCron)
         else:
             msg = "奈非自动换IP已关闭"
