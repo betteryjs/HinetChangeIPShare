@@ -163,4 +163,5 @@ cython_debug/
 
 *.log
 .pytest_cache
+config.json
 

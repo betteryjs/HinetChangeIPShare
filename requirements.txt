@@ -1,5 +1,6 @@
 requests
 cloudflare-ddns
 loguru
-python-crontab
-python-telegram-bot
+pyTelegramBotAPI
+schedule
+croniter

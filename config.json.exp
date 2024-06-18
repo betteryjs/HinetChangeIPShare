@@ -7,8 +7,11 @@
   "TGBotAPI": "xxxxxxxxxxxxxxx",
   "chartId": "xxxxxxxxxxxx",
   "ddnsUrl": "xxxxxxxxxxxxxx",
-  "sock5Port": "xxxxxxxxxxxxxxxx",
+  "checknfport": "10241",
+  "checkgfwport": "10242",
   "checkGFWUrl": "xxxxxxxxxxxxxxxxxxxxx",
   "changeIPCrons": "0 3 * * *",
   "checkNfGfwCron": "*/10 * * * *"
+   "authorized_users": ["AS99294837"]
+
 }

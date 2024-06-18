@@ -1,3 +1,12 @@
+# 适用于家宽VPS 自动换IP 手动换IP 被墙换IP 掉解锁自动换IP  以及定时换IP
+# Hinet HKT 动态
+
+
+
+
+
+
+
 ## 在国内端部署 GFW检测程序
 
 ```shell
@@ -29,10 +38,13 @@ cd HinetChangeIPShare
   "TGBotAPI": "xxxxxxx", # 填入Botfather上面获取的TG bot token
   "chartId": "xxxxxx", # 填入上面获取的私聊chat_id或者群组chat_id
   "ddnsUrl": "hinet.example.xyz", # 填入要ddns的域名 先要吧Hinet的ip解析到要ddns的域名上
-  "sock5Port": "10241",           # 在机器上创建一个没有密码的sock5 节点 (xui/3xui) 设置端口后 后续通过这个sock5代理检测奈非解锁
+  "checknfport": "10241",           # 在机器上创建一个没有密码的sock5 节点 (xui/3xui) 设置端口后 后续通过这个sock5代理检测奈非解锁
+  "checkgfwport": "10242", # 在机器上创建一个普通节点 写入端口号 后续通过这个TCP端口检测是否被墙
   "checkGFWUrl": "http://填入在国内端部署的GFW检测程序的IP:5000/checkip/", # 例如 http://1.1.1.1:5000/checkip/
   "changeIPCrons": "0 3 * * *", #每日换IP的crontab 时间 默认每天凌晨3点
-  "checkNfGfwCron": "*/10 * * * *" # 奈非/被墙检测默认10分钟1次
+  "checkNfGfwCron": "*/10 * * * *", # 奈非/被墙检测默认1分钟1次
+  "authorized_users": ["AS99294837"]  # 授权Bot 的用户Username 就是去掉 @xxx 的xxx
+
 ```
 
 
@@ -69,8 +81,4 @@ systemctl status HinetTGBot.service
 
 
 
-![image-20240218222513485](https://oss.660114.xyz/blog-images/202402182225549.png)
-
-![image-20240218222606312](https://oss.660114.xyz/blog-images/202402182226340.png)
-
-![image-20240219123215338](https://oss.660114.xyz/blog-images/202402191232491.png)
+![menu](images/1.png)
