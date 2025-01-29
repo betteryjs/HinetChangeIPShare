@@ -2,7 +2,16 @@
 # Hinet HKT 动态
 
 
+## IAAS Sponsor
 
+<div style="text-align: center;">
+    <a href="https://yxvm.com/">
+        <img src="https://raw.githubusercontent.com/betteryjs/EcsAutoChangeIPShare/refs/heads/master/images/logo.webp" width="170.7" height="62.9">
+    </a>
+</div>
+
+
+我们非常感谢 [Yxvm](https://yxvm.com/) 提供了支持本项目所需的网络基础设施。
 
 
 
