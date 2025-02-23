@@ -8,18 +8,13 @@
     <a href="https://www.vmiss.com/">
         <img src="https://www.vmiss.com/wp-content/uploads/2023/11/logo.svg" width="170.7" height="62.9">
     </a>
-    <a href="https://yxvm.com/">
-        <img src="https://raw.githubusercontent.com/betteryjs/EcsAutoChangeIPShare/refs/heads/master/images/logo.webp" width="170.7" height="62.9">
-    </a>
     <a href="https://www.zovps.com/aff/VWSIBCGP">
         <img src="https://raw.githubusercontent.com/betteryjs/EcsAutoChangeIPShare/refs/heads/master/images/img.png" width="170.7" height="62.9">
     </a>
 </div>
 
 
-我们非常感谢[Vmiss](https://www.vmiss.com/) [Yxvm](https://yxvm.com/) [慈云数据](https://www.zovps.com/aff/VWSIBCGP)提供了支持本项目所需的网络基础设施。
-
-
+我们非常感谢[Vmiss](https://www.vmiss.com/)  [慈云数据](https://www.zovps.com/aff/VWSIBCGP)提供了支持本项目所需的网络基础设施。
 
 
 ## 在国内端部署 GFW检测程序
