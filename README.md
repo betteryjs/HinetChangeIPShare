@@ -4,7 +4,7 @@
 
 # 赞助信息
 
-<div style="text-align: center;">
+<div >
     <a href="https://app.vmiss.com/aff.php?aff=2866">
         <img src="https://www.vmiss.com/wp-content/uploads/2023/11/logo.svg" width="170.7" height="62.9">
     </a>
@@ -16,8 +16,7 @@
          width="170.7" 
          height="62" 
          style="object-fit: contain;"
-         alt="NetJett Logo"
->
+         alt="NetJett Logo">
 </a>
 
 </div>
