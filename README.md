@@ -15,6 +15,7 @@
     <img src="https://netjett.com//img/logo/logo%20(6).png" 
          width="170.7" 
          height="auto" 
+         style="object-fit: contain; display: block; max-height: 62px;"
          alt="NetJett Logo">
 </a>
 
