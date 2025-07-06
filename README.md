@@ -11,11 +11,10 @@
  <a href="https://yxvm.com/aff.php?aff=840">
         <img src="https://raw.githubusercontent.com/betteryjs/EcsAutoChangeIPShare/refs/heads/master/images/logo.webp" width="170.7" height="170">
     </a>
- <a href="https://netjett.com/aff.php?aff=183">
+<a href="https://netjett.com/aff.php?aff=183">
     <img src="https://netjett.com//img/logo/logo%20(6).png" 
          width="170.7" 
-         height="62" 
-         style="object-fit: contain;"
+         height="auto" 
          alt="NetJett Logo">
 </a>
 
