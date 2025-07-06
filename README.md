@@ -12,7 +12,7 @@
         <img src="https://raw.githubusercontent.com/betteryjs/EcsAutoChangeIPShare/refs/heads/master/images/logo.webp" width="170.7" height="62.9">
     </a>
 <a href="https://netjett.com/aff.php?aff=183">
-    <img src="./images/logo.svg" width="170.7"  height="auto" 
+    <img src="./images/logo.png" width="170.7"  height="auto" 
          style="display: block; max-height: 62.9px;" >
 </a>
 
