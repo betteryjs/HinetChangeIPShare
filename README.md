@@ -9,14 +9,11 @@
         <img src="https://www.vmiss.com/wp-content/uploads/2023/11/logo.svg" width="170.7" height="62.9">
     </a>
  <a href="https://yxvm.com/aff.php?aff=840">
-        <img src="https://raw.githubusercontent.com/betteryjs/EcsAutoChangeIPShare/refs/heads/master/images/logo.webp" width="170.7" height="170">
+        <img src="https://raw.githubusercontent.com/betteryjs/EcsAutoChangeIPShare/refs/heads/master/images/logo.webp" width="170.7" height="62.9">
     </a>
 <a href="https://netjett.com/aff.php?aff=183">
-    <img src="https://netjett.com//img/logo/logo%20(6).png" 
-         width="170.7" 
-         height="auto" 
-         style="object-fit: contain; display: block; max-height: 62px;"
-         alt="NetJett Logo">
+    <img src="./images/logo.img" width="170.7"  height="auto" 
+         style="display: block; max-height: 62.9px;" >
 </a>
 
 </div>
