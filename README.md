@@ -4,17 +4,30 @@
 
 # 赞助信息
 
-<div style="text-align: center;">
-    <a href="https://app.vmiss.com/aff.php?aff=2866">
-        <img src="https://www.vmiss.com/wp-content/uploads/2023/11/logo.svg" width="170.7" height="62.9">
-    </a>
- <a href="https://yxvm.com/aff.php?aff=840">
-        <img src="https://raw.githubusercontent.com/betteryjs/EcsAutoChangeIPShare/refs/heads/master/images/logo.webp" width="170.7" height="170">
-    </a>
- <a href="https://netjett.com/aff.php?aff=183">
-        <img src="./images/img.png" width="170.7" height="62">
-    </a>
 
+
+<div style="text-align: center;">
+    <a href="https://app.vmiss.com/aff.php?aff=2866" style="display: inline-block; margin: 0 10px;">
+        <img src="https://www.vmiss.com/wp-content/uploads/2023/11/logo.svg" 
+             width="170.7" 
+             height="62.9" 
+             style="object-fit: contain; vertical-align: middle;"
+             alt="VMISS Logo">
+    </a>
+    <a href="https://yxvm.com/aff.php?aff=840" style="display: inline-block; margin: 0 10px;">
+        <img src="https://raw.githubusercontent.com/betteryjs/EcsAutoChangeIPShare/refs/heads/master/images/logo.webp" 
+             width="170.7" 
+             height="170" 
+             style="object-fit: contain; vertical-align: middle;"
+             alt="YXVM Logo">
+    </a>
+    <a href="https://netjett.com/aff.php?aff=183" style="display: inline-block; margin: 0 10px;">
+        <img src="https://netjett.com//img/logo/logo%20(6).png" 
+             width="170.7" 
+             height="62" 
+             style="object-fit: contain; vertical-align: middle;"
+             alt="NetJett Logo">
+    </a>
 </div>
 
 
