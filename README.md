@@ -18,7 +18,7 @@
 </div>
 
 
-我们非常感谢[Vmiss]https://app.vmiss.com/aff.php?aff=2866)  [netjett](https://netjett.com/aff.php?aff=183) [Yxvm](https://yxvm.com/aff.php?aff=840)提供了支持本项目所需的网络基础设施。
+我们非常感谢[Vmiss](https://app.vmiss.com/aff.php?aff=2866)  [netjett](https://netjett.com/aff.php?aff=183) [Yxvm](https://yxvm.com/aff.php?aff=840)提供了支持本项目所需的网络基础设施。
 
 
 ## 在国内端部署 GFW检测程序
